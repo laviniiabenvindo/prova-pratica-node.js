@@ -1,0 +1,22 @@
+<div class="box-conteiner">
+    {{#each book}}
+    <section class="box-conteiner-item">
+        <span class="box-item">
+            <h2 class="titulo">{{this.titulo}}</h2>
+            <p class="descricao">{{this.descricao}}</p>
+        </span>
+        <section class="box-item">
+            <span class="miniBox">
+                <p><strong>{{this.categoria}}</strong></p>
+                <p><strong>R${{this.preco}}</strong></p>
+            </span>
+            <span class="nav">
+                <a class="azul" href="./listar/{{this.id}}">Ver detalhes</a>
+                <a class="verde" href="./atualizar/{{this.id}}">Editar</a>
+                <a class="vermelho" href="./excluir/{{this.id}}">Excluir</a>
+            </span>
+        </section>
+
+    </section>
+    {{/each}}
+</div>

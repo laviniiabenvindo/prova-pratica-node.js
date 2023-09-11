@@ -1,0 +1,9 @@
+{{#each book}}
+<div>
+    <h2>{{this.titulo}}</h2>
+    <p>{{this.descricao}}</p>
+</div>
+{{/each}}
+<form action="/excluir/{{id}}" method="post">
+    <input type="submit" value="Excluir">
+</form>
